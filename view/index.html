@@ -1,0 +1,643 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Import Google Icon Font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>FCC projects</title>
+    <style>
+      li{
+        font-size: 1rem;
+      }
+      .img1 {
+        background-image: url("https://camo.githubusercontent.com/60c67cf9ac2db30d478d21755289c423e1f985c6/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f66726565636f646563616d702f776964652d736f6369616c2d62616e6e65722e706e67");
+        background-color: #1b5e20;
+        background-size: cover;
+        background-position: 85% 15%;
+        min-height: 500px;
+      }
+      @media screen and (max-width: 670px) {
+        .img1 {
+          min-height: 300px;
+        }
+      }
+      code {
+        color: black;
+        background-color: white;
+      }
+      blockquote {
+        border-left: 5px solid #cddc39;
+      }
+      ol > li {
+        margin-top: 2px;
+      }
+      #intro {
+        min-height: 320px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper green darken-4">
+            <div class="container">
+              <a href="#!" class="brand-logo lime-text text-lighten-4">DeoGenis</a>
+              <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul id="nav" class="right hide-on-med-and-down">
+                <li><a class="lime-text text-lighten-4" href="#timestamp">Timestamp</a></li>
+                <li><a class="lime-text text-lighten-4" href="#parser">Header Parser</a></li>
+                <li><a class="lime-text text-lighten-4" href="#shortener">URL Shortener</a></li>
+                <li><a class="lime-text text-lighten-4" href="#tracker">Exercise Tracker</a></li>
+                <li><a class="lime-text text-lighten-4" href="#upfile">File Metadata</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <ul class="sidenav" id="mobile">
+        <li><a href="#timestamp">Timestamp</a></li>
+        <li><a href="#parser">Header Parser</a></li>
+        <li><a href="#shortener">URL Shortener</a></li>
+        <li><a href="#tracker">Exercise Tracker</a></li>
+        <li><a href="#upfile">File Metadata</a></li>
+      </ul>
+    </header>
+    <!-- FCC image -->
+    <div class="img1"></div>
+
+    <!-- intro -->
+    <section
+      class="section scrollspy green darken-4 white-text lime-text text-lighten-3"
+      id="intro"
+    >
+      <div class="container center-align1">
+        <div class="row">
+          <div class="col s12 l6">
+            <ul class="tabs">
+              <li class="tab col s6">
+                <a class="active green darken-3 lime-text" href="#fcc"
+                  >freeCodeCamp</a
+                >
+              </li>
+              <li class="tab col s6">
+                <a class="green darken-3 lime-text" href="#curriculum"
+                  >curriculum</a
+                >
+              </li>
+            </ul>
+            <div id="fcc">
+              <h6>What is freeCodeCamp?</h6>
+              <blockquote>
+                <a target="_blank" href="https://www.freecodecamp.org/"
+                  >freeCodeCamp.org</a
+                >
+                is a friendly community where you can learn to code for free. It
+                is run by a donor-supported 501(c)(3) nonprofit with the goal of
+                helping millions of busy adults transition into tech. Our
+                community has already helped more than 10,000 people get their
+                first developer job.
+              </blockquote>
+            </div>
+            <div id="curriculum">
+              <h6>
+                freeCodeCamp Curriculum Consists of Six Core Certifications:
+              </h6>
+              <ol>
+                <li>Responsive Web Design Certification</li>
+                <li>JavaScript Algorithms and Data Structures Certification</li>
+                <li>Front End Libraries Certification</li>
+                <li>Data Visualization Certification</li>
+                <li>APIs and Microservices Certification</li>
+                <li>
+                  Information Security and Quality Assurance Certification
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="col s12 l6">
+            <ul class="tabs">
+              <li class="tab col s6">
+                <a class="active green darken-3 lime-text" href="#certification"
+                  >Certification №5</a
+                >
+              </li>
+              <li class="tab col s6">
+                <a class="green darken-3 lime-text" href="#projects"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+            <div id="certification" class="col s12">
+              <h6>APIs and Microservices Certification Curriculum:</h6>
+              <ol>
+                <li>Managing Packages with Npm</li>
+                <li>Basic Node and Express</li>
+                <li>MongoDB and Mongoose</li>
+                <li>Apis and Microservices Projects</li>
+              </ol>
+            </div>
+            <div id="projects" class="col s12">
+              <h6>Apis and Microservices Projects</h6>
+              <ol>
+                <li>Timestamp Microservice</li>
+                <li>Request Header Parser</li>
+                <li>URL Shortener</li>
+                <li>Exercise Tracker</li>
+                <li>File Metadata Microservice</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timestamp -->
+    <section
+      class="section scrollspy lime lighten-1 green-text text-darken-4"
+      id="timestamp"
+    >
+      <div class="container center-align">
+        <h3>
+          Timestamp Microservice
+          <a
+            target="_blank"
+            href="https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/timestamp-microservice"
+          >
+            <i class="material-icons">link</i>
+          </a>
+        </h3>
+
+        <h5>User Stories:</h5>
+        <ul>
+          <li>
+            The API endpoint is
+            <code>GET [project_url]/api/timestamp/:date_string?</code>
+          </li>
+
+          <li>
+            A date string is valid if can be successfully parsed by
+            <code>new Date(date_string)</code>. Note that the unix timestamp
+            needs to be an integer (not a string) specifying milliseconds. In
+            our test we will use date strings compliant with ISO-8601 (e.g.
+            "2016-11-20") because this will ensure an UTC timestamp.
+          </li>
+
+          <li>
+            If the date string is empty it should be equivalent to trigger
+            <code>new Date()</code>, i.e. the service uses the current
+            timestamp.
+          </li>
+
+          <li>
+            If the date string is valid the api returns a JSON having the
+            structure
+            <code
+              >{"unix": date.getTime(), "utc" : date.toUTCString() } e.g.
+              {"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29
+              GMT"}</code
+            >
+          </li>
+
+          <li>
+            If the date string is invalid the api returns a JSON having the
+            structure <code>{"error" : "Invalid Date" }</code>.
+          </li>
+        </ul>
+
+        <h5>Example Usage:</h5>
+        <p>
+            <a target="_blank" href="/api/timestamp/2015-12-25"
+            >[this url]/api/timestamp/2015-12-25</a
+          >
+        </p>
+        <p>
+            <a target="_blank" href="/api/timestamp/1451001600000"
+            >[this url]/api/timestamp/1451001600000</a
+          >
+        </p>
+        
+
+        <h5>Example Output:</h5>
+        <p>
+          <code
+            >{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 am"}</code
+          ><span> -- GMT</span>
+        </p>
+        <p>
+          <code
+            >{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 2:00:00 am"}</code
+          ><span> -- GMT+2</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Request Header Parser -->
+    <section
+      class="section scrollspy green darken-4 white-text lime-text text-lighten-3"
+      id="parser"
+    >
+      <div class="container center-align">
+        <h3>
+          Request Header Parser Microservice
+          <a
+            target="_blank"
+            href="https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/request-header-parser-microservice/"
+          >
+            <i class="material-icons">link</i>
+          </a>
+        </h3>
+        <h5>User Story:</h5>
+        <ul>
+          <li>
+            I can get the IP address, preferred languages (from header
+            Accept-Language) and system infos (from header User-Agent) for my
+            device.
+          </li>
+        </ul>
+        <h5>Example Usage:</h5>
+        <a target="_blank" href="/api/whoami">[this url]/api/whoami</a>
+        <h5>Example Output:</h5>
+        <p>
+          <code>
+            {"ipaddress": "::1", "language": "uk-UA,uk;q=0.9,ru;q=0.8,en-US;q=0.7,en;q=0.6,fr;q=0.5", "software":"Mozilla/5.0 
+            (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+            Chrome/70.0.3538.110 Safari/537.36"}
+          </code>
+        </p>
+      </div>
+    </section>
+
+    <!-- URL Shortener -->
+    <section
+      class="section scrollspy lime lighten-1 green-text text-darken-4"
+      id="shortener"
+    >
+      <div class="container center-align">
+        <div class="center-align">
+          <h3>
+            URL Shortener Microservice
+            <a
+              target="_blank"
+              href="https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/url-shortener-microservice"
+            >
+              <i class="material-icons">link</i></a
+            >
+          </h3>
+          <h5>User Story:</h5>
+          <ul>
+            <li>
+              I can POST a URL to
+              <code> [project_url]/api/shorturl/new </code> and I will receive a
+              shortened URL in the JSON response.
+            </li>
+            <li>
+              Example :
+              <code> {"original_url":"www.google.com", "short_url":1} </code> If
+              I pass an invalid URL that doesn't follow the
+              <code> http(s)://www.example.com(/more/routes) </code> format, the
+              JSON response will contain an error like
+              <code> {"error":"invalid URL"} </code>
+            </li>
+            <li>
+              When I visit the shortened URL, it will redirect me to my original
+              link.
+            </li>
+          </ul>
+        </div>
+
+        <h5>Short URL Creation</h5>
+        <p>
+          example:
+          <code>
+            POST [project_url]/api/shorturl/new - https://www.google.com/
+          </code>
+          <br />
+        </p>
+
+        <div class="row">
+          <div class="col s12 m8 offset-m2">
+            <div class="card green darken-4 ">
+              <div class="card-content lime-text text-lighten-3">
+                <span class="card-title">URL to be shortened</span>
+                <form action="/api/shorturl/new" method="post">
+                  <div class="input-field">
+                    <textarea
+                      name="original_url"
+                      id="textarea1"
+                      class="materialize-textarea"
+                    ></textarea>
+                    <label for="textarea1"
+                      >Don't forget about http(s)://</label
+                    >
+                  </div>
+                  <div class="input-field center">
+                    <button
+                      type="submit"
+                      formtarget="_blank"
+                      class="btn-large waves-effect waves-light lime lighten-1 green-text text-darken-4"
+                    >
+                      <i class="material-icons right">send</i> POST URL
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h5>Example Usage:</h5>
+        <p><a target="_blank" href="/api/shorturl/0">[this url]/api/shorturl/0</a></p>
+        <h5>Will Redirect to:</h5>
+        <p><a href="#">https://www.google.com</a></p>
+      </div>
+    </section>
+
+    <!-- Exercise Tracker -->
+    <section
+      class="section scrollspy green darken-4 lime-text text-lighten-3"
+      id="tracker"
+    >
+      <div class="container center-align">
+        <h3>
+          Exercise tracker
+          <a
+            target="_blank"
+            href="http://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/exercise-tracker"
+          >
+            <i class="material-icons">link</i>
+          </a>
+        </h3>
+        <h5>User Stories:</h5>
+        <ul>
+          <li>
+            I can create a user by posting form data username to
+            <code>/api/exercise/new-user</code> and returned will be an object
+            with username and _id.
+          </li>
+          <li>
+            I can get an array of all users by getting
+            <code>/api/exercise/users</code> with the same info as when creating
+            a user.
+          </li>
+          <li>
+            I can add an exercise to any user by posting form data userId(_id),
+            description, duration, and optionally date to
+            <code>/api/exercise/add</code>. If no date supplied it will use
+            current date. Returned will the the user object with also with the
+            exercise fields added.
+          </li>
+          <li>
+            I can retrieve a full exercise log of any user by getting
+            <code>/api/exercise/log</code> with a parameter of userId(_id).
+            Return will be the user object with added array log and count (total
+            exercise count).
+          </li>
+          <li>
+            I can retrieve part of the log of any user by also passing along
+            optional parameters of from & to or limit. (Date format yyyy-mm-dd,
+            limit = int)
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col s12 m6 l4 green-text text-darken-4">
+            <div class="card lime lighten-1">
+              <div class="card-content">
+                <span class="card-title">Create a New User</span>
+                <form action="/api/exercise/new-user" method="post">
+                  <div class="input-field">
+                    <input type="text" name="user" id="newUser" />
+                    <label for="newUser">Username</label>
+                  </div>
+                  <div class="input-field center">
+                    <button
+                      type="submit"
+                      formtarget="_blank"
+                      class="btn-large waves-effect waves-light green darken-4 lime-text text-lighten-4"
+                    >
+                      <i class="material-icons right">person_add</i> SUBMIT
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="card lime lighten-1">
+              <div class="card-content">
+                <span class="card-title center">GET all Users</span>
+                <form action="/api/exercise/users" method="get">
+                  <div class="input-field center">
+                    <button
+                      type="submit"
+                      formtarget="_blank"
+                      value="GET"
+                      class="btn-large waves-effect waves-light green darken-4 lime-text text-lighten-4"
+                    >
+                      <i class="material-icons right">group</i>Show all
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4 green-text text-darken-4">
+            <div class="card lime lighten-1">
+              <div class="card-content">
+                <span class="card-title">Add Exercises</span>
+                <form action="/api/exercise/add" method="post">
+                  <div class="input-field">
+                    <input type="text" name="userID" id="userIDlabel" required />
+                    <label for="userIDlabel">userID*</label>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      type="text"
+                      name="description"
+                      id="descriptionlabel"
+                      required
+                    />
+                    <label for="descriptionlabel">description*</label>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      type="number"
+                      name="duration"
+                      id="durationlabel"
+                      min="1"
+                      max="1440"
+                      required
+                    />
+                    <label for="durationlabel">duration*</label>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      type="text"
+                      class="datepicker"
+                      name="date"
+                      id="datelabel"
+                    />
+                    <label for="datelabel">date</label>
+                  </div>
+                  <div class="input-field center">
+                    <button
+                      type="submit"
+                      formtarget="_blank"
+                      class="btn-large waves-effect waves-light green darken-4 lime-text text-lighten-4"
+                    >
+                      <i class="material-icons right">playlist_add</i> ADD
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4 offset-m3 green-text text-darken-4">
+            <div class="card lime lighten-1">
+              <div class="card-content">
+                <span class="card-title">GET Exercises</span>
+                <form action="/api/exercise/log" method="get">
+                  <div class="input-field">
+                    <input type="text" name="userId" id="userID2" required />
+                    <label for="userID2">userID*</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" name="from" id="from" class="datepicker" />
+                    <label for="from">from</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" name="to" id="to" class="datepicker" />
+                    <label for="to">to</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="number" name="limit" min="1" id="limit" />
+                    <label for="limit">limit</label>
+                  </div>
+                  <div class="input-field center">
+                    <button
+                      type="submit"
+                      formtarget="_blank"
+                      class="btn-large waves-effect waves-light green darken-4 lime-text text-lighten-4"
+                    >
+                      <i class="material-icons right">filter_list</i> SHOW
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <!-- File Metadata -->
+    <section class="section scrollspy lime lighten-1" id="upfile">
+      <div class="container">
+        <div class="green-text text-darken-4 center">
+          <h3>
+            File Metadata Microservice
+            <a
+              target="_blank"
+              href="https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/file-metadata-microservice/"
+            >
+              <i class="material-icons">link</i>
+            </a>
+          </h3>
+          <h5>User Stories:</h5>
+          <ul>
+            <li>I can submit a form object that includes a file upload.</li>
+            <li>
+              The from file input field has the "name" attribute set to "upfile". We
+              rely on this in testing.
+            </li>
+            <li>
+              When I submit something, I will receive the file name, type and size
+              in bytes within the JSON response.
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col s12 m6 offset-m3">
+            <div class="card green darken-4 ">
+              <div class="card-content lime-text text-lighten-3">
+                <span class="card-title">Please Select a File and Upload </span>
+                <form
+                  action="/api/upfile"
+                  method="post"
+                  enctype="multipart/form-data"
+                >
+                  <div class="file-field input-field">
+                    <div class="btn lime lighten-1 green-text text-darken-4">
+                      <span>File</span> <input type="file" name="upfile" />
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text" />
+                    </div>
+                  </div>
+                  <div class="input-field center">
+                    <button
+                      type="submit"
+                      formtarget="_blank"
+                      class="btn-large waves-effect waves-light lime lighten-1 green-text text-darken-4"
+                    >
+                      <i class="material-icons right">file_upload</i> UPLOAD
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer green darken-4 lime-text text-lighten-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5>About Me</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="">Connect</h5>
+            <ul>
+              <li><a class="lime-text text-lighten-4" href="#">CodePen</a></li>
+              <li><a class="lime-text text-lighten-4" href="#">Twitter</a></li>
+              <li><a class="lime-text text-lighten-4" href="#">GitHub</a></li>
+              <li><a class="lime-text text-lighten-4" href="#">FCC</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright blue-grey darken-4">
+        <div class="container center-align">&copy; 2018</div>
+      </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+        $(".tabs").tabs();
+        $('.datepicker').datepicker({
+          format: "yyyy-mm-dd"
+      });
+        $(".scrollspy").scrollSpy();
+      });
+    </script>
+  </body>
+</html>

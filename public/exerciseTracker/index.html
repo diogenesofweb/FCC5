@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercise tracker</title>
+  </head>
+  <body>
+    <h1>Exercise tracker</h1>
+    <p>
+      <a
+        target="_blank"
+        href="http://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/exercise-tracker"
+        >FCC Apis and Microservices Projects - Exercise Tracker
+      </a>
+    </p>
+
+    <div class="formes">
+      <div class="form">
+        <h3>Create a New User</h3>
+        <form action="/api/exercise/new-user" method="post">
+          <input type="text" name="user" placeholder="username*" />
+          <input type="submit" value="SUBMIT" />
+        </form>
+        <h3>GET all users</h3>
+        <form action="/api/exercise/users" method="get">
+          <input type="submit" value="GET" />
+        </form>
+      </div>
+
+      <div class="form">
+        <h3>Add exercises</h3>
+        <form action="/api/exercise/add" method="post">
+          <input type="text" name="userID" placeholder="userID*" required />
+          <input
+            type="text"
+            name="description"
+            placeholder="description*"
+            required
+          />
+          <input
+            type="number"
+            name="duration"
+            placeholder="duration* (minutes)"
+            min="1"
+            max="1440"
+            required
+          />
+          <input type="date" name="date" placeholder="date" />
+          <input type="submit" value="SUBMIT" />
+        </form>
+      </div>
+
+      <div class="form">
+        <h3>GET exercises</h3>
+        <form action="/api/exercise/log" method="get">
+          <input type="text" name="userId" placeholder="userID*" required />
+          <input type="date" name="from" placeholder="from" />
+          <input type="date" name="to" placeholder="to" />
+          <input type="number" name="limit" min="1" placeholder="limit" />
+          <input type="submit" value="SUBMIT" />
+        </form>
+      </div>
+    </div>
+
+    </div>
+  </body>
+</html>
