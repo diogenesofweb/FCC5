@@ -41,7 +41,10 @@
         margin-top: 2px;
       }
       #intro {
-        min-height: 320px;
+        min-height: 380px;
+      }
+      #introtext {
+        margin-bottom: 15px;
       }
     </style>
   </head>
@@ -73,16 +76,22 @@
         <li><a href="#upfile">File Metadata</a></li>
       </ul>
     </header>
+
     <!-- FCC image -->
     <div class="img1"></div>
 
     <!-- intro -->
     <section
-      class="section scrollspy green darken-4 white-text lime-text text-lighten-3"
+      class="section scrollspy green darken-4 white-text lime-text text-lighten-4"
       id="intro"
     >
       <div class="container center-align1">
         <div class="row">
+          <h6 id="introtext" class="center">
+            This website is my attempt to complete freeCodeCamp projects (APIs and
+            microservices certification), design responsive home page and finally
+            deploy my first app to Heroku </br>
+          </h6>
           <div class="col s12 l6">
             <ul class="tabs">
               <li class="tab col s6">
@@ -244,7 +253,7 @@
 
     <!-- Request Header Parser -->
     <section
-      class="section scrollspy green darken-4 white-text lime-text text-lighten-3"
+      class="section scrollspy green darken-4 white-text lime-text text-lighten-4"
       id="parser"
     >
       <div class="container center-align">
@@ -328,7 +337,7 @@
         <div class="row">
           <div class="col s12 m8 offset-m2">
             <div class="card green darken-4 ">
-              <div class="card-content lime-text text-lighten-3">
+              <div class="card-content lime-text text-lighten-4">
                 <span class="card-title">URL to be shortened</span>
                 <form action="/api/shorturl/new" method="post">
                   <div class="input-field">
@@ -365,7 +374,7 @@
 
     <!-- Exercise Tracker -->
     <section
-      class="section scrollspy green darken-4 lime-text text-lighten-3"
+      class="section scrollspy green darken-4 lime-text text-lighten-4"
       id="tracker"
     >
       <div class="container center-align">
@@ -567,7 +576,7 @@
         <div class="row">
           <div class="col s12 m6 offset-m3">
             <div class="card green darken-4 ">
-              <div class="card-content lime-text text-lighten-3">
+              <div class="card-content lime-text text-lighten-4">
                 <span class="card-title">Please Select a File and Upload </span>
                 <form
                   action="/api/upfile"
@@ -604,19 +613,49 @@
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5>About Me</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-            </p>
+            <h5>Technologies Used:</h5>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Mongoose.js</li>
+              <li>MaterializeCSS</li>
+            </ul>
           </div>
           <div class="col l4 offset-l2 s12">
             <h5 class="">Connect</h5>
             <ul>
-              <li><a class="lime-text text-lighten-4" href="#">CodePen</a></li>
-              <li><a class="lime-text text-lighten-4" href="#">Twitter</a></li>
-              <li><a class="lime-text text-lighten-4" href="#">GitHub</a></li>
-              <li><a class="lime-text text-lighten-4" href="#">FCC</a></li>
+              <li>
+                <a
+                  target="_blank"
+                  class="lime-text text-lighten-4"
+                  href="https://codepen.io/cd26/collections/popular/"
+                  >CodePen</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  class="lime-text text-lighten-4"
+                  href="https://twitter.com/diogenesofweb"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  class="lime-text text-lighten-4"
+                  href="https://github.com/diogenesofweb"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  class="lime-text text-lighten-4"
+                  href="https://www.freecodecamp.org/cd26"
+                  >freeCodeCamp</a
+                >
+              </li>
             </ul>
           </div>
         </div>

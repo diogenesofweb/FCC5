@@ -36,16 +36,11 @@ app.use(
 );
 app.use(bodyParser.json());
 
-// serve public pages
-app.use("/", express.static(__dirname + "/view"));
-// app.use("/api/times", express.static(__dirname + "/public/timestamp"));
-// app.use("/api/whoami/static", express.static(__dirname + "/public/whoami"));
-// app.use("/api/shorturl", express.static(__dirname + "/public/shortURL"));
-// app.use("/api/exercise", express.static(__dirname + "/public/exerciseTracker"));
-// app.use("/api/upfile", express.static(__dirname + "/public/upfile"));
+// serve public page
+app.use("/", express.static(__dirname + "/public"));
 
-app.use("/", require("./routes/start"));
 // initialize routes
+app.use("/", require("./routes/start"));
 app.use("/api/timestamp", require("./routes/timestamp"));
 app.use("/api/whoami", require("./routes/requestHeaderParser"));
 app.use("/api/shorturl", require("./routes/shorturl"));

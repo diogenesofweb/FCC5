@@ -1,8 +1,8 @@
 const express = require("express");
-const router1 = express.Router();
+const routerS = express.Router();
 
-router1.get("/", (req, res, next) => {
+routerS.get("/", (req, res, next) => {
   res.send("hello");
 });
 
-module.exports = router1;
+module.exports = routerS;
