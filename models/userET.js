@@ -26,7 +26,6 @@ const userET = new Schema({
   exercises: [Exercises]
 });
 
-// create exerciseTracker model
 const UserET = mongoose.model("exerciseTracker", userET);
 
 module.exports = UserET;

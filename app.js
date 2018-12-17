@@ -49,7 +49,7 @@ app.use("/api/upfile", require("./routes/upfile"));
 
 // error handling middleware
 app.use((err, req, res, next) => {
-  //console.error(err);
+  //console.error({ error: err.message });
   res.status(422).send({ error: err.message });
 });
 

@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const validator = require("validator");
 
-const shortURLSchema = new Schema({
+const ShortURLSchema = new Schema({
   original_url: {
     type: String,
     validate: {
@@ -15,9 +15,7 @@ const shortURLSchema = new Schema({
     type: Number
   }
 });
-// if URL is valid but allredy exist in DB, it will be handle in POST request
 
-// create url model
-const ShortURL = mongoose.model("shortURL", shortURLSchema);
+const ShortURL = mongoose.model("shortURL", ShortURLSchema);
 
 module.exports = ShortURL;

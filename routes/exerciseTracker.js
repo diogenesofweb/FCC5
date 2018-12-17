@@ -9,7 +9,7 @@ routerExer.post("/new-user", (req, res, next) => {
   // console.log(req.body);
   userET.findOne({ name: req.body.user }).exec((err, user) => {
     if (err) {
-      //  console.error(err);
+      console.error(err);
     } else if (user) {
       // console.log(user);
       res.send({
@@ -61,16 +61,6 @@ routerExer.post("/add", (req, res, next) => {
       res.send(user);
     }
   );
-  // Or without update validation
-  /* userET.findByIdAndUpdate(
-    req.body.id,
-    { $push: { exercises: req.body.exercise } },
-    { new: true },
-    (err, user) => {
-      if (err) {res.send({ error: err.message })}
-      res.send(user);
-    }
-  );*/
 });
 
 // GETting full exercise array of any user
