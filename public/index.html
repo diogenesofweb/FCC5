@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <title>FCC projects</title>
+    <title>Projects</title>
     <style>
       li{
         font-size: 1rem;
@@ -186,14 +186,12 @@
             <i class="material-icons">link</i>
           </a>
         </h3>
-
         <h5>User Stories:</h5>
         <ul>
           <li>
             The API endpoint is
             <code>GET [project_url]/api/timestamp/:date_string?</code>
           </li>
-
           <li>
             A date string is valid if can be successfully parsed by
             <code>new Date(date_string)</code>. Note that the unix timestamp
@@ -201,13 +199,11 @@
             our test we will use date strings compliant with ISO-8601 (e.g.
             "2016-11-20") because this will ensure an UTC timestamp.
           </li>
-
           <li>
             If the date string is empty it should be equivalent to trigger
             <code>new Date()</code>, i.e. the service uses the current
             timestamp.
           </li>
-
           <li>
             If the date string is valid the api returns a JSON having the
             structure
@@ -217,13 +213,11 @@
               GMT"}</code
             >
           </li>
-
           <li>
             If the date string is invalid the api returns a JSON having the
             structure <code>{"error" : "Invalid Date" }</code>.
           </li>
         </ul>
-
         <h5>Example Usage:</h5>
         <p>
             <a target="_blank" href="/api/timestamp/2015-12-25"
@@ -234,9 +228,7 @@
             <a target="_blank" href="/api/timestamp/1451001600000"
             >[this url]/api/timestamp/1451001600000</a
           >
-        </p>
-        
-
+        </p>        
         <h5>Example Output:</h5>
         <p>
           <code
@@ -324,7 +316,6 @@
             </li>
           </ul>
         </div>
-
         <h5>Short URL Creation</h5>
         <p>
           example:
@@ -333,7 +324,6 @@
           </code>
           <br />
         </p>
-
         <div class="row">
           <div class="col s12 m8 offset-m2">
             <div class="card green darken-4 ">
@@ -364,7 +354,6 @@
             </div>
           </div>
         </div>
-
         <h5>Example Usage:</h5>
         <p><a target="_blank" href="/api/shorturl/0">[this url]/api/shorturl/0</a></p>
         <h5>Will Redirect to:</h5>
@@ -613,7 +602,7 @@
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5>Technologies Used:</h5>
+            <h5>Built with:</h5>
             <ul>
               <li>Node.js</li>
               <li>Express.js</li>
@@ -628,22 +617,6 @@
                 <a
                   target="_blank"
                   class="lime-text text-lighten-4"
-                  href="https://codepen.io/cd26/collections/popular/"
-                  >CodePen</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  class="lime-text text-lighten-4"
-                  href="https://twitter.com/diogenesofweb"
-                  >Twitter</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  class="lime-text text-lighten-4"
                   href="https://github.com/diogenesofweb"
                   >GitHub</a
                 >
@@ -654,6 +627,22 @@
                   class="lime-text text-lighten-4"
                   href="https://www.freecodecamp.org/cd26"
                   >freeCodeCamp</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  class="lime-text text-lighten-4"
+                  href="https://codepen.io/cd26/collections/popular/"
+                  >CodePen</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  class="lime-text text-lighten-4"
+                  href="https://twitter.com/diogenesofweb"
+                  >Twitter</a
                 >
               </li>
             </ul>
